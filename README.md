@@ -1,23 +1,30 @@
 # dockerCommands
 **Just tiny list of docker's commands/Шпаргалка по Docker :whale: :new_moon_with_face:**
 
+## Оглавление
+
+1) [test](Test)
+2) [Гугль](https://google.com)
+
 ### Images/ Работа с образами
 1) Скачать образ(Image) командой pull:
-```BASH
+```
 $ docker pull ubuntu
 ```
 
 2) Посмотреть образы, скаченные на локальную машину можно командой Images или image ls:
-```BASH
+```
 $ docker images
 $ docker image ls
 ```
 
-3) Удалить ненужные образы можно с помощью команды rmi. Удалить все неиспользуемые образы можно командой image prun:
-
-```BASH
+3) Удалить ненужные образы можно с помощью команды rmi:
+```
 $ docker rmi id_образа
-или удалить все неиспользуемые образы
+```
+
+4) Удалить все неиспользуемые образы можно командой image prun:
+```
 $ docker image prun
 ```
 
@@ -104,3 +111,7 @@ node_modules
 .git
 Dockerfile
 .idea
+
+# Test
+
+[Оглавление](Оглавление)

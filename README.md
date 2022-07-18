@@ -1,12 +1,25 @@
 # dockerCommands
-Just tiny list of docker's commands
-Шпаргалка по Docker
-1. Скачать образ(Image) командой pull:
-docker pull ubuntu
+**Just tiny list of docker's commands/Шпаргалка по Docker :whale: :new_moon_with_face:**
 
-2. Посмотреть образы, скаченные на комп командой Images или image ls
-docker images
-docker image ls
+### Images/ Работа с образами
+1) Скачать образ(Image) командой pull:
+```BASH
+$ docker pull ubuntu
+```
+
+2) Посмотреть образы, скаченные на локальную машину можно командой Images или image ls:
+```BASH
+$ docker images
+$ docker image ls
+```
+
+3) Удалить ненужные образы можно с помощью команды rmi. Удалить все неиспользуемые образы можно командой image prun:
+
+```BASH
+$ docker rmi id_образа
+или удалить все неиспользуемые образы
+$ docker image prun
+```
 
 3. Запуск Image командой run
 docker run имя или id
@@ -38,9 +51,7 @@ docker attach id контейнера
 9. Логи и вывод в консоль в контейнере командой logs
 docker logs id контейнера
 
-10. Удаление ненужных образов с помощью команды rmi
-docker rmi id образа
-docker image prun удаляет все неиспользуемые образы
+
 
 11. Чтобы узнать ip виртуальной машины 
 docker-machine ip

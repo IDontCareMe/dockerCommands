@@ -28,7 +28,7 @@ $ docker rmi id_образа
 
 4) Удалить все неиспользуемые образы можно командой image prun:
 ```
-$ docker image prun
+$ docker image prune
 ```
 
 5) Запустить образ(Image) можно командой run:

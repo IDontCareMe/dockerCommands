@@ -104,6 +104,11 @@ $ docker exec -it postgres psql -U postgres
  >Ключ -d (--detach) - detached mode запуск в фоновом режиме   
  >Ключ -e задаёт значение переменным окружения   
 
+9) Чтобы скопировать файлы из контейнера на хост используется команда cp
+```
+$ docker cp id_контейнера:/file/path/within/container /host/path/target
+```
+
 [:small_red_triangle:Оглавление](#оглавление)
 
 ### Dockerfile/ Создание собственных образов
